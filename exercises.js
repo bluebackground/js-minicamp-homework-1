@@ -13,7 +13,7 @@ function subtractFive(num) {
 function areSameLength(str1, str2) {
   // return true if the two strings have the same length
   // otherwise return false
-  if (str1.length() === str2.length()) {
+  if (str1.length === str2.length) {
     return true;
   } else {
     return false;
@@ -72,7 +72,7 @@ function isEven(num) {
 function isOdd(num) {
   // return true if num is false
   // otherwise return false
-  return !(num%2 === 0);
+  return (num%2 !== 0);
 }
 
 function square(num) {
@@ -87,7 +87,7 @@ function cube(num) {
 
 function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
-  return Math.pow(num, expoenent);
+  return Math.pow(num, exponent);
 }
 
 function roundNumber(num) {
@@ -103,19 +103,19 @@ function roundUp(num) {
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
-  return str + "!";
+  return str + '!';
 }
 
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Lambda', 'School' -> 'Lambda School'
-  return firstName + " " + lastName;
+  return firstName + ' ' + lastName;
 }
 
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
-  return "Hello " + name + "!";
+  return 'Hello ' + name + '!';
 }
 
 // If you can't remember these area formulas then head over to Google or look at the test code.
@@ -132,7 +132,7 @@ function getTriangleArea(base, height) {
 
 function getCircleArea(radius) {
   // return the rounded area of the circle given the radius
-  return Math.PI * Math.pow(radius, 2);
+  return Math.round(Math.PI * radius * radius);
 }
 
 function getRectangularPrismVolume(length, width, height) {
